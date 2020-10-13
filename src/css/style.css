@@ -1,0 +1,631 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --white-color: #ffffff;
+    --typrography-primary-color: #5a5a5a;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* Theme Settings */
+    /* width: 1366px; */
+    /* height: 5848px; */
+    background-color: var(--white-color);
+}
+section {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Roboto;
+
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--typrography-primary-color);
+}
+.Hero{
+    width: 100vw;
+    min-height: 90vh;
+    padding-top: 50px;
+
+    /* deve3lopment purposes */
+    /* background-color: yellow; */
+}
+.header{
+    height: 5.9rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Roboto;
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.02px;
+    text-align: left;
+    color: var(--typrography-primary-color);
+}
+.header-navigation{
+    margin: 0 auto;
+}
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    
+    align-items: center;
+}
+.header-navigation ul li:not(:first-child) {
+    margin-left: 3.2rem;
+}
+.header-navigation ul li a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+.header-navigation ul li .cta{
+    /* display: flex;
+    align-items: center; */
+    margin: auto;
+    border-radius: 30px;
+    height: 5.9rem;
+    background-color: var(--typrography-primary-color);
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    padding: 10px 15px;
+    color: var(--white-color);
+    line-height: 59px;
+}
+.hero__heading--secondary {
+    padding-right: 240px;
+    padding-bottom: 42px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+    color: #707070;
+}
+.hero__heading--primary {
+    padding:40px 0px;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #4d535d;
+}
+.bottom_branding_logo{
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+.branding_url a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.6rem;
+    color: #6c6e6f;
+}
+.plugvertising-intor {
+       
+    
+}
+.plugvertising-intor__heading-primary{
+    font-size: 3.9rem;
+    line-height: 5.2rem;
+    font-weight: normal;  
+}
+.plugvertising-intor__heading-secondary {
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+}
+.plugvertising-intor__video-container {
+    width: 70%;
+    height: 620px;
+    margin: 20px auto;
+    border-radius: 7px;
+    background-color:  #8a9571;
+    
+}
+.plugvertising-intor__video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.faudiolabs-plugins__heading-primary{
+    font-size: 3.9rem;
+    line-height: 5.2rem;
+    font-weight: normal;  
+}
+.faudiolabs-plugins__heading-secondary{
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    width: 70%;
+    margin: auto;   
+}
+.faudiolabs-plugins__container{
+    /* background-color: BLUE; */
+    width: 90%;
+    margin: auto;
+    margin-top: 6.4rem;
+    display: flex;
+
+}
+.plugin-metabox{
+    width: 29%;
+    background-color: #f0f0f0;
+    border: solid 1px #95989a;
+    border-radius:  7px;
+    
+}
+.plugin-metabox:not(:last-child){
+    margin-right: 10px;
+}
+.plugin-metabox img{
+    width: 100%;
+}
+.plugin-detial{
+    display: block;
+    font-size: 2.0rem;
+    line-height: 2.1rem;
+    color:#454b54;
+    margin-top: -12px;
+}
+.plugin-detial p{
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+.faudiolab-artists__heading-primary {
+    font-size: 3.9rem;
+    line-height: 5.2rem;
+    font-weight: normal;  
+}
+.faudiolab-artists__heading-secondary {
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    width: 70%;
+    margin: auto;   
+}
+.faudiolab-artists--container {
+    width: 100%;
+    background-color: #bbbea2;
+    margin-top: 44px;
+    padding: 10px 0px;
+    /* padding:0 100px; */
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: left; */
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2 , auto);
+    grid-template-columns: repeat(4 , 22%);
+    grid-gap: 24px;
+    
+}
+.artist-metabox {
+    width: 100%;
+    border-radius: 4px;
+}
+.artist-metabox img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+.artist-detial {
+    display: block;
+    padding: 14px;
+    background-color: #595f4d;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    border-radius :0px 0px 8px 8px;
+}
+.artist-detial h5 {
+    font-size: 2.0rem;
+    line-height: 2.1rem;
+    font-weight: bold;
+}
+.artist-detial p {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: normal;
+}
+
+.priceandplan-section__heading-primary {
+    font-size: 4.2rem;
+    line-height: 5.5rem;
+    font-weight: normal;
+}
+.priceandplan_top-bar{
+    width: 46.8rem;
+    height: 6.1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 0 rgba(4, 4, 4, 0.3);
+    margin: auto;
+    margin-top: 30px;
+
+    font-size: 18.8px;
+    line-height: 22.5px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.secondary_choice {
+    color: #ffa33a;
+}
+
+.toggle-button-cover
+{
+    display: table-cell;
+    position: relative;
+    width: 100px;
+    height: 140px;
+    box-sizing: border-box;
+}
+
+/* .button-cover
+{
+    height: 100px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+} */
+/* 
+.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+} */
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button
+{
+    position: relative;
+    top: 50%;
+    width: 60px;
+    height: 24px;
+    margin: -12px auto 0 auto;
+    overflow: hidden;
+}
+
+.button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+
+.button.b2
+{
+    border-radius: 2px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: rgba(255, 200, 136, .4);
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+/* Button 1 */
+#button-1 .knobs:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 12px;
+    height: 2px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #ffa33a;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked + .knobs:before
+{
+    content: '';
+    left: 37px;
+    background-color: #5a5a5a;
+}
+
+#button-1 .checkbox:checked ~ .layer
+{
+    background-color: #b2ba91;
+}
+
+#button-1 .knobs, #button-1 .knobs:before, #button-1 .layer
+{
+    transition: 0.3s ease all;
+}
+.priceandplan-card-container {
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.priceandplan-card__wrapper{
+    width: 30%;
+}
+.priceandplan-card__action-button,
+.custom_subscription-plan__action-button {
+    outline: none;
+    margin: 40px auto;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: #989a81;
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+.priceandplan-card__action-button::before,
+.custom_subscription-plan__action-button::before{
+    content: "\203A";
+    font-size: 25px;
+    padding-right: 3px;
+    color: white
+}
+
+.priceandplan-card {
+  width: 100%;
+  min-height: 578px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+
+  transition: all 150ms ease-in-out;
+  
+  text-align: center;
+  position: relative;
+    top: 0;
+    left: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  
+}
+.priceandplan-card:hover{
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+    top: -4px;
+}
+ .priceandplan-card__heading-primary {
+   
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: normal;
+  color: #3a3a3a;
+  padding-top: 23px;
+  text-transform: uppercase;
+}
+.priceandplan-card__heading-secondary {
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #6a6a6a;
+  padding-top: 3.9rem;
+
+
+  width: 70%;
+  margin: auto; 
+} 
+.priceandplan-card__price-meta-box {
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;  
+
+    position: relative;
+}
+.priceandplan-card__currency-symbol {
+  position: absolute;
+  top: 20px;
+  left: 137px;
+
+  font-size: 1.8rem;
+}
+.priceandplan-card__currency-digit{
+    position: absolute;
+    top: 22px;
+    left: 18px;
+
+    font-size: 4.6rem;
+    display: flex;
+}
+.priceandplan-card__header-badge {
+    height: 4.9rem;
+    width: 4.1rem;
+    background-color: #ffa33a;
+
+    position: absolute;
+    top: 0px;
+    right: 20px;
+
+}
+.priceandplan-card__header-badge::before {
+    content: "\2605";
+    color: white;
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-40%, -50%);
+        font-size: 25px;
+    }
+.priceandplan-card__header-badge::after {
+    content: '';
+    color: white;
+    position: absolute;
+    
+    bottom: -7px;
+    right: -13px;
+    /* height: 30px;
+    width: 30px; */
+    border-bottom: 18px solid white;
+    border-left: 33px solid transparent;
+    border-right: 33px solid transparent;
+    /* background-color: green; */
+    /* transform: rotate(45deg); */
+}
+
+.priceandplan-card__currency-decimals {
+    font-size: 1.888rem;
+    line-height: 45.9px;
+    padding-left: 3px;
+    justify-self: flex-end;
+}
+.priceandplan-card__subscription-plan {
+    padding-top: 71px;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: 6a6a6a;
+}
+.priceandplan-card--standard {
+    color: #ffa33a;
+}
+.priceandplan-card--advanced {
+    color: #e52c2c;
+}
+.priceandplan-card__subscription-plan--oferrs {
+    margin-top: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.priceandplan-card__subscription-plan--oferrs li {
+    width: 90%;
+    height: 40px;
+    /* margin: 0 auto; */
+    /* background-color: yellow; */
+    /* padding-left: 30px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    color:#5a5a5a;
+}
+.priceandplan-card__subscription-plan--oferrs li .list-tick-icon{
+    fill: green;
+    width: 20px;
+    height: 20px;
+    margin-right: 70px;
+    padding-left: 20px;
+}
+.priceandplan-card__customer-note{
+    font-size: 1.6rem;
+    line-height: 18px;
+    color: #707070;
+    padding: 15px 0px;
+}
+.priceandplan-card--cta {
+    padding: 20px 0px;
+    font-size: 12.5px;
+    line-height: 22.9px;
+    color: #6a6a6a;
+}
+.custom_subscription-plan--container{
+    margin: 20px auto;
+    height: 282px;
+    width: 80%;
+    border-radius: 15px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  color:#5a5a5a;
+}
+.custom_subscription-plan--Heading{
+    font-size: 4.2rem;
+    line-height: 5.5rem;
+    padding: 15px 0px;
+}
+.custom_subscription-plan--Secondary-text{
+    font-size: 2.3rem;
+    line-height: 30px;
+    width: 74%;
+    margin: 0 auto;
+
+}
+.clientsandpattner-section__heading-primary {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-weight: normal;
+    text-transform: uppercase;   
+}
+.clientsandpattner-section__showcase{
+    padding: 5rem 0px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(2 , 64px);
+    grid-template-columns: repeat(6 , 175px);  
+    grid-gap: 15px;
+    justify-content: center; 
+}
+.clientsandpattner-section__showcase img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}

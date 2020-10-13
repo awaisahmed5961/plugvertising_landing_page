@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.onscroll = function () {
+            var dv = document.getElementById('video-box');
+            var v = document.getElementById('i_video');
+            if ((window.scrollY < (dv.offsetTop + dv.offsetHeight)) && ((window.scrollY + window.outerHeight) > dv.offsetTop)) {
+                if (v.src == '' || v.src == location.href) {
+                    v.src = 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1';
+                }
+            } else {
+                v.src = '';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="Hero">
+
+        <div class="header">
+            <nav class="header-navigation">
+                <ul>
+                    <li>
+                        <a href="#">plugvertise</a>
+                    </li>
+                    <li>
+                        <a href="#">f-audiolabs</a>
+                    </li>
+                    <li>
+                        <a href="#">artists</a>
+                    </li>
+                    <li>
+                        <a href="#">pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                    <li>
+                        <a class="cta" href="#"> sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2 class="hero__heading--secondary">INTRODUCING</h2>
+        <img src="images/logos/Rectangle 168.jpg" alt="">
+        <h1 class="hero__heading--primary">THE WORLD’S FIRST ADVERTISING SYSTEM FOR AUDIO PLUGINS BY</h1>
+
+        <img class="bottom_branding_logo" src="images/logos/Group 3.jpg" alt="">
+        <div class="branding_url">
+            <a href="#">
+                www.f-audiolabs.com
+            </a>
+        </div>
+    </section>
+    <!-- Introduction Section -->
+    <section class="plugvertising-intor">
+        <h3 class="plugvertising-intor__heading-primary">WHAT IS PLUGVERTISING?</h3>
+        <p class="plugvertising-intor__heading-secondary">A revolutionary…….</p>
+        <div class="plugvertising-intor__video-container" id="video-box">
+            <iframe id="i_video" src="" frameborder="0" allowfullscreen loading="lazy" webkitallowfullscreen
+                mozallowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <!-- Plugins Section -->
+    <section class="faudiolabs-plugins">
+        <h3 class="faudiolabs-plugins__heading-primary">F-AUDIOLABS PLUGINS</h3>
+        <p class="faudiolabs-plugins__heading-secondary">All of our plug-ins are proudly created after countless hours
+            of research, dedication and experimentation. We are driven by an incredible passion for music and fueled by
+            liters of coffee!
+        </p>
+
+        <div class="faudiolabs-plugins__container">
+            <div class="plugin-metabox">
+                <img src="images/plugins/Tremelon_RACK.111.png" alt="Tremelon Plugin">
+                <div class="plugin-detial">
+                    <h5>Tremelon</h5>
+                    <p>Dual Tremolo</p>
+                </div>
+            </div>
+            <div class="plugin-metabox">
+                <img src="images/plugins/Phazevibe_Bundle.png" alt=" EchoBandit Plugin">
+                <div class="plugin-detial">
+                    <h5>EchoBandit</h5>
+                    <p> Classic Tape Echo</p>
+                </div>
+            </div>
+            <div class="plugin-metabox">
+                <img src="images//plugins/Phazevibe_Bundle ee.png" alt="Phazevibe Plugin">
+                <div class="plugin-detial">
+                    <h5>Phazevibe</h5>
+                    <p>Eddie Kramer Phaser - UniVibe</p>
+                </div>
+            </div>
+            <div class="plugin-metabox">
+                <img src="images/plugins/Edstortion Bundle.png" alt="Edstortion Plugin">
+                <div class="plugin-detial">
+                    <h5>Edstortion</h5>
+                    <p> Eddie Kramer Distortion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Artists Section -->
+    <section class="faudiolab-artists">
+        <h3 class="faudiolab-artists__heading-primary">F-AUDIOLABS ARTISTS</h3>
+        <p class="faudiolab-artists__heading-secondary">We are so proud of the many artists worldwide that endorsed our
+            products and use them to create amazing music.
+        </p>
+
+        <div class="faudiolab-artists--container">
+            <div class="artist-metabox">
+                <img src="images/user profiles/maxresdefault.png" alt="">
+                <div class="artist-detial">
+                    <h5>DAVID PALAU</h5>
+                    <p>SPAIN</p>
+                </div>
+            </div>
+
+            <div class="artist-metabox">
+                <img src="images/user profiles/curtschneider.png" alt="">
+                <div class="artist-detial">
+                    <h5>CURT SCHNEIDER</h5>
+                    <p> USA</p>
+                </div>
+            </div>
+            <div class="artist-metabox">
+                <img src="images/user profiles/simonesello.png" alt="">
+                <div class="artist-detial">
+                    <h5>SIMONE SELLO</h5>
+                    <p> USA</p>
+                </div>
+            </div>
+            <div class="artist-metabox">
+                <img src="images/user profiles/tommydenander.png" alt="Tommy denander">
+                <div class="artist-detial">
+                    <h5>TOMMY DENANDER</h5>
+                    <p> SWEDEN</p>
+                </div>
+            </div>
+            <div class="artist-metabox">
+                <img src="images/user profiles/simonesello.png" alt="">
+                <div class="artist-detial">
+                    <h5>NEGRAMARO</h5>
+                    <p> ITALY</p>
+                </div>
+            </div>
+            <div class="artist-metabox">
+                <div class="artist-detial">
+                    <h5> NICOLAS FRAMAKALIDIS</h5>
+                    <p> USA</p>
+                </div>
+            </div>
+
+            <div class="artist-metabox">
+                <div class="artist-detial">
+                    <h5> RAFA MOREIRA</h5>
+                    <p>BRASIL</p>
+                </div>
+            </div>
+            <div class="artist-metabox">
+                <div class="artist-detial">
+                    <h5> JOSE DE CASTRO</h5>
+                    <p> SPAIN</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="priceandplan-section">
+        <h3 class="priceandplan-section__heading-primary">PRICE AND PLANS</h3>
+
+        <div class="priceandplan_top-bar">
+            MONTHLY
+            <div class="toggle-button-cover">
+                <div class="button-cover">
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="secondary_choice">
+                ANNUALY ( Best Value )
+            </span>
+        </div>
+
+        <div class="priceandplan-card-container">
+            <div class="priceandplan-card__wrapper">
+
+                <div class="priceandplan-card">
+                    <div class="priceandplan-card__heading-primary">
+                        Basic
+                    </div>
+                    <div class="priceandplan-card__heading-secondary">
+                        Getting your brand in the known
+                    </div>
+                    <div class="priceandplan-card__price-meta-box">
+                        <div class="priceandplan-card__currency-symbol">
+                            $
+                            <div class="priceandplan-card__currency-digit">
+                                XX
+                                <span class="priceandplan-card__currency-decimals">
+                                    .99
+                                </span>
+                            </div>
+                        </div>
+                        <div class="priceandplan-card__subscription-plan">Monthly</div>
+                    </div>
+                    <ul class="priceandplan-card__subscription-plan--oferrs">
+
+                        <li>
+                            1 Country
+                        </li>
+                        <li>
+
+                            1 Banner
+                        </li>
+                        <li>
+                            <!-- <svg class="list-tick-icon" xmlns="http://www.w3.org/2000/svg"
+                                enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384"
+                                xml:space="preserve">
+                                <path
+                                    d="m192 0c-106.04 0-192 85.961-192 192s85.961 192 192 192 192-85.961 192-192-85.961-192-192-192zm0 341.33c-82.475 0-149.33-66.859-149.33-149.33s66.858-149.33 149.33-149.33 149.33 66.858 149.33 149.33-66.858 149.33-149.33 149.33z" />
+                                <polygon
+                                    points="258.06 113.78 169.45 212.91 125.18 170.42 95.633 201.2 171.8 274.31 289.87 142.22" />
+                            </svg> -->
+                            5” Display Time
+                        </li>
+
+                        <li>Add-Ons</li>
+                        <li>Happy Hour Sale</li>
+                        <li> Click Report</li>
+                        <li> Ad Early Placement</li>
+                        <li>Mailing List Placement</li>
+                    </ul>
+
+                    <div class="priceandplan-card--cta">
+                        see details
+                    </div>
+                </div>
+                <button class="priceandplan-card__action-button"> start now</button>
+            </div>
+            <div class="priceandplan-card__wrapper">
+                <div class="priceandplan-card priceandplan-card--standard">
+                    <div class="priceandplan-card__heading-primary">
+                        Standard
+                    </div>
+                    <div class="priceandplan-card__header-badge">
+
+                    </div>
+                    <div class="priceandplan-card__heading-secondary">
+                        Customizable to fit your needs and budget.
+                    </div>
+                    <div class="priceandplan-card__price-meta-box">
+                        <div class="priceandplan-card__currency-symbol">
+                            $
+                            <div class="priceandplan-card__currency-digit">
+                                XX
+                                <span class="priceandplan-card__currency-decimals">
+                                    .99
+                                </span>
+                            </div>
+                        </div>
+                        <div class="priceandplan-card__subscription-plan">Monthly</div>
+                    </div>
+                </div>
+                <button class="priceandplan-card__action-button"> start now</button>
+            </div>
+            <div class="priceandplan-card__wrapper">
+                <div class="priceandplan-card priceandplan-card--advanced">
+                    <div class="priceandplan-card__heading-primary">
+                        ADVANCED
+                    </div>
+                    <div class="priceandplan-card__heading-secondary">
+                        Get even bigger with an incredible reach.
+                    </div>
+                    <div class="priceandplan-card__price-meta-box">
+                        <div class="priceandplan-card__currency-symbol">
+                            $
+                            <div class="priceandplan-card__currency-digit">
+                                XX
+                                <span class="priceandplan-card__currency-decimals">
+                                    .99
+                                </span>
+                            </div>
+                        </div>
+                        <div class="priceandplan-card__subscription-plan">Monthly</div>
+                    </div>
+                </div>
+                <button class="priceandplan-card__action-button"> start now</button>
+            </div>
+        </div>
+
+        <div class="custom_subscription-plan--container">
+            <div class="custom_subscription-plan--Heading">
+                NEED EVEN MORE?
+            </div>
+            <div class="custom_subscription-plan--Secondary-text">
+                Contact one of our representatives to discuss a custom tailored Plugvertising plan.
+                We can actually design a brand new plugin just for you.
+            </div>
+            <button class="custom_subscription-plan__action-button"> Contact Us</button>
+        </div>
+
+        <div class="priceandplan-card__customer-note">
+            We collect sales taxes in states where it is required by law. Stated prices do not include these taxes.
+        </div>
+    </section>
+
+    <section class="clientsandpattner-section">
+        <h3 class="clientsandpattner-section__heading-primary">Clients & Partners</h3>
+
+        <div class="clientsandpattner-section__showcase">
+            <figure class="gallery__item">
+                <img src="images/clients/5bcaec2b405ed7b537860dc7b6e5c036.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/e95d12049a80136fe731f9235775ce8c.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/c0e6b086007ac5ec7ba5f92f66736df4.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/fb0ee38d086d0cc20b9879dfa15612c8.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/d77a8c31b1d93148bb6aa188c069e710.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/5bcaec2b405ed7b537860dc7b6e5c036.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/6d521b25385224de8ff1871885b96fd3.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/824f16afd576a0f866e7a0bd78c8cc0a.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/Screen Shot 2020-10-08 at 11.28.52.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/98c11118e318ba6a571bc701a8ccfa02.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/5f6168bdcc0e29c4665b3db0cae6b2c6.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+                <img src="images/clients/Screen Shot 2020-10-08 at 11.27.23.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+    <section class="section-contact-us">
+        <h3 class="section-contact-us__heading-primary">CONTACT US</h3>
+    </section>
+</body>
+
+</html>
